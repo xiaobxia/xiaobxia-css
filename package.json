@@ -1,0 +1,27 @@
+{
+  "name": "xiaobxia-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaobxia/xiaobxia-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaobxia/xiaobxia-css/issues"
+  },
+  "homepage": "https://github.com/xiaobxia/xiaobxia-css#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

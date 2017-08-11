@@ -1,0 +1,26 @@
+.circle {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+#circle {
+  border-radius: 50%;
+}
+
+#quadrant {
+  border-radius: 100% 0 0 0;
+}
+
+#ellipse {
+  width: 200px;
+  height: 100px;
+  border-radius: 50% / 50%;
+}
+#semicircle{
+  width: 200px;
+  height: 100px;
+  border-radius: 50%/ 100% 100% 0 0;
+}
+
