@@ -16,13 +16,14 @@ gulp.task('scss', function () {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./example'));
 });
 
 gulp.task('server', function (cb) {
   browserSync({
     server: {
-      baseDir: './'
+      baseDir: './example'
     },
     port: 3000,
     notify: false,
@@ -40,6 +41,7 @@ gulp.task('watch', function () {
   }
 
   gulp.watch('./scss', gulp.series('build', serverReload));
+  gulp.watch('./example/index.html',  serverReload);
 });
 
 gulp.task('default', gulp.series('build', 'server', 'watch'));
