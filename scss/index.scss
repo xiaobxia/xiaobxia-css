@@ -6,6 +6,7 @@
 @import "textarea/scrollbar";
 @import "textarea/beautify";
 
+@import "scrollbar/style";
 .main-wrap{
   @include clearfix;
 }
